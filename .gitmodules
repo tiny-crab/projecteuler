@@ -1,0 +1,6 @@
+[submodule "reSizeMatters"]
+	path = reSizeMatters
+	url = https://github.com/zakattak/reSizeMatters.git
+[submodule "projecteuler"]
+	path = projecteuler
+	url = https://github.com/zakattak/reSizeMatters.git
