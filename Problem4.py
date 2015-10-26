@@ -4,11 +4,11 @@ def isPalindrome(testNum):
     strTestNum = str(testNum)
     intTestNum = int(testNum)
     partLength = math.floor(len(strTestNum)/2)
-    firstHalf = strTestNum[:partLength]
+    firstHalf = strTestNum[:int(partLength)]
     if(intTestNum % 2 == 0):
-        lastHalf = strTestNum[partLength-1:]
+        lastHalf = strTestNum[int(partLength-1):]
     else:
-        lastHalf = strTestNum[partLength:]
+        lastHalf = strTestNum[int(partLength):]
     #reverse string
     lastHalf = lastHalf[::-1]
     if(lastHalf == firstHalf):
