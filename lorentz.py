@@ -1,8 +1,9 @@
 #Finding the lorentzian contraction of a meter stick traveling along one dimension
 #speed must be a ratio of c
-def lorentz(length, speed):
+#l0 represents proper length (measured length in rest frame)
+def lorentz(l0, speed):
     gamma = 1 / ( (1-(speed**2))**.5 )
-    l0 = length / gamma
-    return l0
+    length = l0 / gamma
+    return length
 
-print(lorentz(1, .8))
+print(lorentz(1, .9))
